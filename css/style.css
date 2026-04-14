@@ -197,7 +197,7 @@ nav ul {
 }
 
 .container-sobre img {
-    width: 850px;
+    width: 45%;
     height: auto;
 }
 
@@ -383,4 +383,241 @@ footer hr {
 #sociais a img:hover {
     transform: scale(1.2);
     opacity: 1;
+}
+
+@media (max-width: 1300px) {
+
+    header {
+        padding: 0 30px;
+    }
+
+    .links {
+        gap: 24px;
+    }
+
+    .links a {
+        font-size: 22px;
+    }
+
+    .container-sobre {
+        gap: 40px;
+    }
+
+    .container-sobre img {
+        width: 420px;
+    }
+
+    .container-sobre .texto h2 {
+        font-size: 48px;
+        white-space: normal;
+    }
+
+    .container-sobre .texto p {
+        font-size: 22px;
+    }
+
+    .detalhes {
+        gap: 40px;
+    }
+
+    .detalhes strong {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    header a img {
+        height: 50px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .links a {
+        font-size: 18px;
+    }
+
+    .icon-admin img {
+        height: 25px;
+    }
+
+    #imagemCarrossel {
+        max-height: 260px;
+        object-position: center;
+    }
+
+    #carrossel button {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    #menu {
+        padding: 50px 20px;
+    }
+
+    #menu > h2 {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .categorias {
+        gap: 14px;
+    }
+
+    .categoria {
+        width: 110px;
+        padding: 14px 10px;
+    }
+
+    .categoria img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .categoria p {
+        font-size: 12px;
+    }
+
+    #sobre {
+        padding: 50px 24px;
+        min-height: auto;
+    }
+
+    .container-sobre {
+        flex-direction: column;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .container-sobre img {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .container-sobre .texto h2 {
+        font-size: 36px;
+        white-space: normal;
+    }
+
+    .container-sobre .texto p {
+        font-size: 16px;
+    }
+
+    .detalhes {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin-top: 36px;
+        padding: 0 8px;
+    }
+
+    .detalhes strong {
+        font-size: 16px;
+    }
+
+    .detalhes p {
+        font-size: 13px;
+    }
+
+    .detalhes img {
+        width: 50px;
+    }
+
+    #avaliacoes {
+        padding: 50px 20px;
+    }
+
+    #avaliacoes > h2 {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    #containerAvaliacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    footer {
+        padding: 40px 20px 24px;
+    }
+
+    #containerFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    #containerFooter > div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #footerBottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #imagemCarrossel {
+        max-height: 200px;
+    }
+
+    .categorias {
+        gap: 10px;
+    }
+
+    .categoria {
+        width: 90px;
+        padding: 12px 8px;
+    }
+
+    .categoria img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .categoria p {
+        font-size: 11px;
+    }
+
+    .container-sobre .texto h2 {
+        font-size: 28px;
+    }
+
+    #avaliacoes > h2,
+    #menu > h2 {
+        font-size: 26px;
+    }
 }
