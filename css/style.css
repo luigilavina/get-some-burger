@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: #F5F5F5;
+    color: black;
+    padding-top: 100px;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    z-index: 1000;
+    background-color: #fffbed;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+header a img {
+    height: 80px;
+}
+
+nav {
+    font-family: "Caveat Brush", cursive;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: orangered;
+}
+
+.icon-admin {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.icon-admin img {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.icon-admin:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/*Carrossel*/
+#carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#imagemCarrossel {
+    width: 100%;
+    display: block;
+    max-height: 950px;
+    object-fit: cover;
+}
+
+#carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#carrossel button:first-of-type {
+    left: 20px;
+}
+
+#carrossel button:last-of-type {
+    right: 20px;
+}
+
+#carrossel button:hover {
+    background-color: orangered;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/*Menu*/
+#menu {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+#menu>h2 {
+    font-family: "Caveat Brush", cursive;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+/* CATEGORIAS */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    width: 150px;
+    padding: 20px 15px;
+    border-radius: 18px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.categoria img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.categoria p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.categoria:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(255, 69, 0, 0.18);
+}
+
+/*Sobre*/
+#sobre {
+    background-image: url('../imagens/bannerSobre.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1600px;
+}
+
+.container-sobre img {
+    width: 850px;
+    height: auto;
+}
+
+.container-sobre .texto h2 {
+    font-family: "Caveat Brush", cursive;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.container-sobre .texto p {
+    font-size: 30px;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.detalhe1,
+.detalhe2,
+.detalhe3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.detalhe1 strong,
+.detalhe2 strong,
+.detalhe3 strong,
+.detalhe1 p,
+.detalhe2 p,
+.detalhe3 p {
+    margin: 0;
+    display: block;
+}
+
+.detalhes img {
+    width: 65px;
+    height: auto;
+}
+
+.texto-detalhe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalhes strong {
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.detalhes p {
+    font-size: 15px;
+}
+
+/*Avaliações*/
+#avaliacoes {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+#avaliacoes>h2 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+#containerAvaliacao {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 320px;
+    min-height: 260px;
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 110px;
+    margin-bottom: 14px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/*Footer*/
+footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 50px 40px 30px;
+}
+
+#containerFooter {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+#containerFooter>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    gap: 8px;
+}
+
+#containerFooter img {
+    width: 32px;
+    margin-bottom: 6px;
+    filter: invert(1);
+}
+
+#containerFooter strong {
+    font-size: 15px;
+    color: #fff;
+}
+
+#containerFooter p {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0 20px;
+}
+
+#footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 10px;
+}
+
+#footerBottom>p {
+    font-size: 13px;
+    color: #888;
+}
+
+#sociais {
+    display: flex;
+    gap: 20px;
+}
+
+#sociais a img {
+    width: 30px;
+    filter: invert(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.75;
+}
+
+#sociais a img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
