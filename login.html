@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get some Burguer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagens/Logo.png">
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="login.html" class="icon-admin">
+                        <img src="imagens/iconUsuario.png" alt="Login Admin">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <form class="login-form">
+            <h2>Login Admin</h2>
+
+            <div class="input-group">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+    </main>
+</body>
+
+</html>
