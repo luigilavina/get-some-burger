@@ -173,6 +173,21 @@ nav ul {
     box-shadow: 0 10px 24px rgba(255, 69, 0, 0.18);
 }
 
+#area-itens{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-card{
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 /*Sobre*/
 #sobre {
     background-image: url('../imagens/bannerSobre.png');
