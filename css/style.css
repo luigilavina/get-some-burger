@@ -90,6 +90,7 @@ nav ul {
     display: block;
     max-height: 950px;
     object-fit: cover;
+    transition: opacity 0.5s ease;
 }
 
 #carrossel button {

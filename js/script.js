@@ -14,6 +14,10 @@ const btnVolta = document.getElementById('btnVolta');
 
 function atualizarImagem() {
   imagemCarrossel.src = imagens[indice];
+  setTimeout(() => {
+    imagemCarrossel.src = imagens[indice];
+    imagemCarrossel.style.opacity = 1;
+  }, 300);
 }
 
 btnProximo.addEventListener('click', () => {
@@ -25,6 +29,11 @@ btnVolta.addEventListener('click', () => {
   indice = (indice - 1 + imagens.length) % imagens.length;
   atualizarImagem();
 });
+
+setInterval(() => {
+  indice = (indice + 1) % imagens.length;
+  atualizarImagem();
+}, 5000);
 
 
 // Menu Fixo
