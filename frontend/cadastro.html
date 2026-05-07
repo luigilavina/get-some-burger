@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get some Burguer - Cadastro</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.png">
+
+    <script src="./js/cadastro.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./imagens/Logo.png" alt="Logo Get Some Burger">
+        </a>
+    </header>
+
+    <main class="login-container">
+        <form class="login-form" id="cadastroForm">
+            <h2>Cadastro</h2>
+
+            <div class="input-group">
+                <label for="registerName">Nome</label>
+                <input type="text" id="registerName" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="input-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="registerPassword">Senha</label>
+                <input type="password" id="registerPassword" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-login">Criar Conta</button>
+
+            <p class="cadastro-texto">Já possui conta?</p>
+
+            <a href="./login.html" class="btn-cadastro">
+                Fazer login
+            </a>
+        </form>
+    </main>
+</body>
+
+</html>
