@@ -66,10 +66,11 @@ function mostrarItens(categoriaSelecionada) {
     div.classList.add('item-card')
 
     div.innerHTML = `
-      <h3>${produto.name}</h3>
-      <p>${produto.description || ''}</p>
-      <strong>R$ ${produto.price}</strong>
-    `
+    <img src="./imagens/${produto.image}" alt="${produto.name}">
+    <h3>${produto.name}</h3>
+    <p>${produto.description || ''}</p>
+    <strong>R$ ${produto.price}</strong>
+  `
 
     areaItens.appendChild(div)
   })

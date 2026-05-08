@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Get Some Burger</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.png">
+
+    <script src="./js/admin.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./imagens/Logo.png" alt="Logo Get Some Burger">
+        </a>
+
+        <nav>
+            <ul class="links">
+                <li><a href="./index.html">Site</a></li>
+                <li><button id="btnLogout">Sair</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-container">
+        <h1>Painel Admin</h1>
+
+        <section class="admin-form-section">
+            <h2>Adicionar / Editar Produto</h2>
+
+            <form id="productForm">
+                <input type="hidden" id="productId">
+
+                <div class="input-group">
+                    <label for="name">Nome do produto</label>
+                    <input type="text" id="name" placeholder="Ex: Get Some Classic" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="price">Preço</label>
+                    <input type="number" id="price" placeholder="Ex: 25" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="category">Categoria</label>
+                    <select id="category" required>
+                        <option value="">Selecione</option>
+                        <option value="hamburgers">Hamburguers</option>
+                        <option value="acompanhamentos">Acompanhamentos</option>
+                        <option value="sobremesas">Sobremesas</option>
+                        <option value="bebidas">Bebidas</option>
+                        <option value="drinks">Drinks</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="image">Imagem</label>
+                    <input type="text" id="image" placeholder="Ex: burger1.png">
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Descrição</label>
+                    <textarea id="description" placeholder="Descrição do produto"></textarea>
+                </div>
+
+                <button type="submit" class="btn-admin">
+                    Salvar Produto
+                </button>
+
+                <button type="button" id="btnCancelEdit" class="btn-cancel">
+                    Cancelar edição
+                </button>
+            </form>
+        </section>
+
+        <section class="admin-products-section">
+            <h2>Produtos cadastrados</h2>
+
+            <div id="productsList"></div>
+        </section>
+    </main>
+</body>
+
+</html>
